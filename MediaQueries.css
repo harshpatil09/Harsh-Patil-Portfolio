@@ -7,7 +7,8 @@
     .about-containers{
         flex-wrap: wrap;
     }
-    #about{
+    #about,
+    #contact{
         margin-top: 12rem;
     }
 }

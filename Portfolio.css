@@ -384,12 +384,15 @@ article .icon{
 
 /* CONTACT */
 
-#contact{
+#contact {
+    margin-top: 35rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    flex-grow: 1; /* Added */
 }
+
 
 .contact-info-upper-container{
     display: flex;
