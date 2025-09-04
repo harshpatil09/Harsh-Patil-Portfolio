@@ -108,6 +108,17 @@
         display: block;
     }
 }
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+    .article-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    article {
+        width: 80%; /* adapt width on smaller screens */
+        justify-content: center;
+    }
+}
 
 

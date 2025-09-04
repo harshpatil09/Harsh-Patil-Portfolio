@@ -1,438 +1,673 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title style="font-family: 'Times New Roman', Times, serif;">HARSH PORTFOLIO</title>
-    <link rel="stylesheet" href="Portfolio.css">
-    <link rel="stylesheet" href="MediaQueries.css">
-    <link rel="icon" href="./assets/Page_icon.png">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title style="font-family: 'Times New Roman', Times, serif">
+      HARSH PORTFOLIO
+    </title>
+    <link rel="stylesheet" href="Portfolio.css" />
+    <link rel="stylesheet" href="MediaQueries.css" />
+    <link rel="icon" href="./assets/Page_icon.png" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Harsh Patil</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contacts</a></li>
-            </ul>
-        </div>
+      <div class="logo">Harsh Patil</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+      </div>
     </nav>
 
-<!-- HAMBURGER -->
+    <!-- HAMBURGER -->
     <nav id="hamburger-nav">
-        <div class="logo">Harsh Patil</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a>
-                </li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Project
-
-                </a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
-            </div>
+      <div class="logo">Harsh Patil</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Project </a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+      </div>
     </nav>
 
     <!-- Section -->
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/Profile.jpg" alt="Harsh Patil Profile Picture" id="profile_pic">
-
+      <div class="section__pic-container">
+        <img
+          src="./assets/Profile.jpg"
+          alt="Harsh Patil Profile Picture"
+          id="profile_pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">Harsh Patil</h1>
+        <p class="section__text__p2">Computer Science Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Harsh_D_Patil_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/Harsh_Certificates.pdf')"
+          >
+            Certificates
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello I'm</p>
-            <h1 class="title">Harsh Patil</h1>
-            <p class="section__text__p2">Computer Science Engineer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Harsh_D_Patil_Resume.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="window.open('./assets/Harsh_Certificates.pdf')">Certificates</button>
-                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
-                
-            </div>
-            <div id="social-container">
-                <img 
-                src="./assets/linkedin_icon.png" alt="My Linked Profile" 
-                class="icon"
-                onclick="location.href='https://www.linkedin.com/in/harsh-patil-a5142a247/'">
+        <div id="social-container">
+          <img
+            src="./assets/linkedin_icon.png"
+            alt="My Linked Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/harsh-patil-a5142a247/'"
+          />
 
-                <img 
-                src="./assets/github_icon.png" alt="My GitHub Profile" 
-                class="icon"
-                onclick="location.href='https://github.com/harshpatil09'">
-            </div>
+          <img
+            src="./assets/github_icon.png"
+            alt="My GitHub Profile"
+            class="icon"
+            onclick="location.href='https://github.com/harshpatil09'"
+          />
         </div>
-
+      </div>
     </section>
 
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h2 class="title">
-            About Me
-        </h2>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <!-- Add proper Pic -->
-                <img 
-                src="./assets/About.jpg" 
-                alt="About-pic"
-                style="border-radius: 20px;">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <!-- Exprience container -->
-                    <div class="details-container">
-
-                        <img 
-                        src="./assets/education_icon.png" alt="Education pic" class="icon">
-                        <h3>Education</h3>
-                        <p>B.Tech in <br>COMPUTER SCIENCE ENGINEERING<br>at<br>D.Y.PATIL COLLEGE OF ENGINEERING, KOLHAPUR.</p>
-                    </div>
-                    <div class="details-container">
-
-                        <img 
-                        src="./assets/exprience_icon.png" 
-                        alt="Expreience pic" class="icon">
-                        <h3>Expreience</h3>
-                        <p>6 months Intern<br>at<br>
-                        <span>Real Time Application Center<br>as<br>Full Stack Developer<br></span>
-                        </p>
-                    </div>
-                    
-
-                    
-                </div>
-                <div class="text-container">
-                    <!-- Add text related to education and expriences -->
-                    <p>
-                        Hello, I'm Harsh Patil, a dedicated student pursuing a B.Tech degree in Computer Science & Engineering. I have a strong passion for technology and a deep interest in exploring its applications. I enjoy the creative process of problem-solving and the challenge of finding innovative solutions. <br>
-
-                        I believe in the power of continuous learning and growth, and I am always looking for new opportunities to expand my horizons. I am excited about the possibilities that lie ahead in my journey as a developer, and I am eager to contribute to meaningful projects that make a positive impact.
-                        <br>
-                        Explore my projects <a href="#projects" style="color:blue;text-decoration:underline">
-                            click here</a>.
-                    </p>
-                </div>
-            </div>
+      <p class="section__text__p1">Get To Know More</p>
+      <h2 class="title">About Me</h2>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <!-- Add proper Pic -->
+          <img
+            src="./assets/About.jpg"
+            alt="About-pic"
+            style="border-radius: 20px"
+          />
         </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <!-- Education container -->
+            <div class="details-container">
+              <img
+                src="./assets/education_icon.png"
+                alt="Education pic"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                B.Tech in Computer Science<br />
+                CGPA: 8.6 / 10<br />
+                Dec 2021 – Jun 2025<br />
+                at<br />
+                D.Y. Patil College of Engineering & Technology, Kolhapur
+              </p>
+            </div>
+            <!-- Experience container -->
+            <div class="details-container">
+              <img
+                src="./assets/exprience_icon.png"
+                alt="Expreience pic"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                6 Months Intern<br />
+                <span>
+                  Yotta Data Services Pvt. Ltd.<br />
+                  Python full stack Development Intern<br />
+                  Jan 2025 – Jul 2025
+                </span>
+                <br /><br />
+                6 Months Intern<br />
+                <span>
+                  Real Time Application Center Pvt. Ltd.<br />
+                  Full Stack Developer Intern<br />
+                  Dec 2023 – May 2024
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <!-- Updated about text -->
+            <p>
+              Hello, I'm Harsh Patil, currently pursuing a B.Tech degree in
+              Computer Science & Engineering with a CGPA of 8.6 at DYPCET,
+              Kolhapur. I have hands-on experience through internships at Yotta
+              Data Services, where I worked on AI-powered chatbots and real-time
+              dashboards, and at Real Time Application Center, where I developed
+              full-stack billing systems for retail shops.
+              <br /><br />
+              I am passionate about technology, problem-solving, and building
+              innovative solutions that make a meaningful impact. With skills in
+              Python, Java, C++, PHP, JavaScript, MERN Stack, and AI/ML (RAG &
+              Embedding Models), I enjoy continuous learning and contributing to
+              impactful projects.
+              <br /><br />
+              Explore my projects
+              <a
+                href="#projects"
+                style="color: blue; text-decoration: underline"
+              >
+                click here</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
 
-        <!-- Add arrow icon -->
-        <img 
-        src="./assets/arrow_icon.png" 
-        alt="arrow icon" 
+      <!-- Add arrow icon -->
+      <img
+        src="./assets/arrow_icon.png"
+        alt="arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
-        >
+      />
     </section>
 
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">
-                        <!-- Change -->
-                        Programming Languages
-                    </h2>
-                    <div class="article-container">
-                        
-                        <article>
-                            <img src="./assets/exprience_icon2.png" alt="Experience icon"
-                            class="icon">
-                            <div>
-                                <h3>Cpp</h3>
-                                <p>Intermidiate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/exprience_icon2.png" alt="Experience icon"
-                            class="icon">
-                            <div>
-                                <h3>Java</h3>
-                                <p>Intermidiate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/exprience_icon2.png" alt="Experience icon"
-                            class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermidiate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/exprience_icon2.png" alt="Experience icon"
-                            class="icon">
-                            <div>
-                                <h3>GitGitHub</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-
-                    </div>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Programming Languages -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">
-                        <!-- Change -->
-                        Web Development
-                    </h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/exprience_icon2.png" alt="Experience icon"
-                            class="icon">
-                            <div>
-                                <!-- Change -->
-                                <h3>HTML</h3>
-                                <p>Intermidiate
-
-                                </p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/exprience_icon2.png" alt="Experience icon"
-                            class="icon">
-                            <div>
-                                <!-- Change -->
-                                <h3>Bootstrap</h3>
-                                <p>Intermidiate</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/exprience_icon2.png" alt="Experience icon"
-                            class="icon">
-                            <div>
-                                <!-- Change -->
-                                <h3>JS & JQuery</h3>
-                                <p>Intermidiate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/exprience_icon2.png" alt="Experience icon"
-                            class="icon">
-                            <div>
-                                <!-- Change -->
-                                <h3>ReactJS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/exprience_icon2.png" alt="Experience icon"
-                            class="icon">
-                            <div>
-                                <!-- Change -->
-                                <h3>Node JS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">
-                        <!-- Change -->
-                        DataBases
-                    </h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/exprience_icon2.png" alt="Experience icon"
-                            class="icon">
-                            <div>
-                                <!-- Change -->
-                                <h3>MySQL</h3>
-                                <p>Basic
-                                </p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/exprience_icon2.png" alt="Experience icon"
-                            class="icon">
-                            <div>
-                                <!-- Change -->
-                                <h3>FireBase</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/exprience_icon2.png" alt="Experience icon"
-                            class="icon">
-                            <div>
-                                <!-- Change -->
-                                <h3>ExpressJS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/exprience_icon2.png" alt="Experience icon"
-                            class="icon">
-                            <div>
-                                <!-- Change -->
-                                <h3>Django</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
+          </div>
+
+          <!-- Frameworks / Libraries -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frameworks / Libraries</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flask</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MERN Stack</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>jQuery</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Databases</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Tools / Platforms -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools / Platforms</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Grafana</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postman</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DataStax Astra</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firecrawl</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cloud Technologies</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>No-Code / Low-Code Platforms</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- AI / ML -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">AI / ML</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RAG</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/exprience_icon2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Embedding Models</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <!-- Add arrow icon -->
-        <img 
-        src="./assets/arrow_icon.png" 
-        alt="arrow icon" 
+      </div>
+
+      <!-- Add arrow icon -->
+      <img
+        src="./assets/arrow_icon.png"
+        alt="arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
-        >
+      />
     </section>
 
     <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
         <div class="about-containers">
+          <!-- EduQuest -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">
+              EduQuest: An E-Learning Platform
+            </h2>
+            <p style="text-align: justify">
+              A MERN-based customizable training platform developed for Binaric
+              System Pvt. Ltd. to deliver course content and track fresher
+              performance with advanced analytics. Published in IJSREM, Volume 9
+              Issue 5, May 2025.
+            </p>
+            <br />
+            <p>Tech Stack: MERN, JavaScript (ES6+), MongoDB, Grafana</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://doi.org/10.55041/IJSREM47178'"
+              >
+                Research Paper
+              </button>
+            </div>
+          </div>
 
-            <!-- Change image links -->
+          <!-- Patient History Centralization -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">
+              Patient History Centralization
+            </h2>
+            <p style="text-align: justify">
+              Proposed and implemented a secure centralized medical record
+              system to streamline healthcare access and decision-making.
+              Published in IJNRD, Volume 9 Issue 3, Mar 2024.
+            </p>
+            <br />
+            <p>Tech Stack: Python, Databases, Web Development Concepts</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ijnrd.org/viewpaperforall.php?paper=IJNRD2403202'"
+              >
+                Research Paper
+              </button>
+            </div>
+          </div>
+
+          <!-- EzCart -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">
+              EzCart: An E-Commerce Website
+            </h2>
+            <p style="text-align: justify">
+              Developed a customizable e-commerce platform with product
+              listings, shopping cart, and adaptable features for varied
+              business needs.
+            </p>
+            <br />
+            <p>Tech Stack: PHP, MySQL, Bootstrap, jQuery</p>
+          </div>
+
+          <!-- Yotta Dashboard -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">
+              <b>Yotta Dashboard (Internship Project)</b>
+            </h2>
+            <p style="text-align: justify">
+              Developed a real-time pricing dashboard with automated web
+              scraping for competitor price tracking and data-driven insights
+              during my internship at Yotta Data Services.
+            </p>
+            <br />
+            <p>
+              Tech Stack: Python, REST APIs, Streamlit, Grafana, DataStax Astra,
+              Firecrawl
+            </p>
+          </div>
+
+          <!-- Version Management System -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">
+              <b>Version Management System (Internship Project)</b>
+            </h2>
+            <p style="text-align: justify">
+              A Flask-based web application that helps organizations manage and
+              track released versions of different applications. The system
+              allows users to add, edit, and maintain release history
+              efficiently.
+            </p>
+            <br />
+            <p>
+              <b>🚀 Features:</b> Manage release versions, metadata handling,
+              track logs, session management, flash notifications, secure
+              password storage, MySQL integration, JSON Schema validation.
+            </p>
+            <br />
+            <p>
+              <b>🛠️ Tech Stack:</b> Flask, Flask-SQLAlchemy, SQLAlchemy, HTML,
+              Bootstrap, JavaScript, MySQL, JSON Schema, Werkzeug
+            </p>
+          </div>
+          </div>
+          <br><br>
+          <p class="section__text__p1">Browse My Recent</p>
+          <h1 class="title">Internships</h1>
+          <div class="about-containers">
+            <!-- Yotta Internship -->
             <div class="details-container color-container">
-                <!-- <div class="article-container">
-                    <img src="./assets/About_pic.jpg" alt="Project 1" class="project-img">
-                </div> -->
-                <h2 class="experience-sub-title project-title">Zanvar Supplier Portal</h2>
-                <p style="text-align: justify;">In this project, we have designed and implemented a supplier portal for Zanvar, optimizing supplier communication and enhancing transparency. The portal streamlines supplier management processes, fostering efficiency and collaboration.</p><br>
+              <h2 class="experience-sub-title project-title">
+                Yotta Data Services Pvt. Ltd.
+              </h2>
+              <p style="text-align: justify">
+                <b>AI and Web Development Intern</b><br />
+                Jan 2025 – Jul 2025<br /><br />
+                Contributed to multiple projects including:<br />
+                • AI-powered Chatbot (RAG with embedding models) <br />
+                • Real-time Pricing Dashboard (Web Scraping & Insights)<br />
+                • Version Management System (Flask-based release tracking)<br />
+                For more details:
+                <a
+                href="#projects"
+                style="color: blue; text-decoration: underline"
+              >
+                click here</a
+              >
+              <br><br>
+                <b>Tech Stack:</b> Python, REST APIs, Streamlit, Grafana,
+                DataStax Astra, Firecrawl, RAG
+              </p>
             </div>
 
+            <!-- RTAC Internship -->
             <div class="details-container color-container">
-                <!-- <div class="article-container">
-                    <img src="./assets/About_pic.jpg" alt="Project 2" class="project-img">
-                </div> -->
-                <h2 class="experience-sub-title project-title">Patient History Centralisation</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
-                </div>
+              <h2 class="experience-sub-title project-title">
+                Real Time Application Center Pvt. Ltd.
+              </h2>
+              <p style="text-align: justify">
+                <b>Full Stack Developer Intern</b><br />
+                Dec 2023 – May 2024<br /><br />
+                Worked on a <b>Billing System</b> for retail shops, ensuring
+                accurate and efficient transaction processing with
+                frontend–backend integration.<br /><br />
+                <b>Tech Stack:</b> HTML, CSS, Bootstrap, JavaScript, PHP,
+                jQuery, MySQL
+              </p>
             </div>
-
-            <div class="details-container color-container">
-                <!-- <div class="article-container">
-                    <img src="./assets/About_pic.jpg" alt="Project 3" class="project-img">
-                </div> -->
-                <h2 class="experience-sub-title project-title">Team Building</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
-                </div>
-            </div>
-
         </div>
-        <div class="about-containers">
-        <div class="details-container color-container">
-            <!-- <div class="article-container">
-                <img src="./assets/About_pic.jpg" alt="Project 1" class="project-img">
-            </div> -->
-            <h2 class="experience-sub-title project-title">Billing System</h2>
-            <p style="text-align: justify;">The billing system is designed to address billing issues at small stores efficiently. This software solution can generate bills and replace traditional billing machines, streamlining the process. The system is built using HTML, Bootstrap, jQuery, and PHP, ensuring a robust and responsive user interface. My contributions to the development of various modules in this project have significantly enhanced my skills in both frontend and backend programming.</p><br><p>Skill Set:PHP, HTML, Bootstrap, JQuery, MySQL, Teamwork</p>
-        </div>
+      </div>
 
-        <div class="details-container color-container">
-            <!-- <div class="article-container">
-                <img src="./assets/About_pic.jpg" alt="Project 1" class="project-img">
-            </div> -->
-            <h2 class="experience-sub-title project-title">E-commerce Website</h2>
-            <p style="text-align: justify;">The E-Commerce Shopping System is a web-based project enabling online shopping from home. It simplifies purchasing by allowing users to order and pay online, eliminating the need for physical store visits. This project revolutionizes traditional shopping, making it more convenient and efficient with the power of Internet Technology, offering a wide range of products at the user's fingertips.</p><br><p>Key Skills: Web Development, Database Management, E-Commerce Platforms, User Experience (UX) Design</p>
-        </div>
-
-    </div>
-
-    <br><br><p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Internships</h1>
-        <div class="about-containers">
-
-            <!-- Change image links -->
-
-            <div class="details-container color-container">
-                <!-- <div class="article-container">
-                    <img src="./assets/About_pic.jpg" alt="Project 3" class="project-img">
-                </div> -->
-                <h2 class="experience-sub-title project-title">RTAC</h2>
-                <p style="text-align: justify;">15/12/2023 to 30/04/2024 <br>
-                    Worked as Jr. Developer. get to enhance my programming skills in
-                    Languages like HTML, CSS, Bootstrap, PHP. Worked on Real Time Project, a online billing system.
-                </p>
-            </div>
-            <div class="details-container color-container">
-                <!-- <div class="article-container">
-                    <img src="./assets/About_pic.jpg" alt="Project 3" class="project-img">
-                </div> -->
-                <h2 class="experience-sub-title project-title">ZANVAR </h2>
-                <p style="text-align: justify;">15/03/2024 to 30/04/2024<br>
-                    In this internship worked as a developer for Zanvar Industry. Were our 4 member team had solved a problem faced by Industry, Supplier Portal. <br>In which i contributed to develope and design all the frontend of the system.
-                    Languages which are implemented ReactJS, NodeJS, Django, Postgrade database.
-                </p>
-            </div>
-            <div class="details-container color-container">
-                <!-- <div class="article-container">
-                    <img src="./assets/About_pic.jpg" alt="Project 3" class="project-img">
-                </div> -->
-                <h2 class="experience-sub-title project-title">Networking Inter</h2>
-                <p style="text-align: justify;">15/12/2023 to 30/04/2024 <br>
-                    Worked as a network designer at D.Y.Patil College of Engineering and technology, Kolhapur. <br>We designed a full network for new upcoming hitech building in campus. <br>Get to learn more about the Network devices and various technologies related to it, also got a deep idea about the SDN system.
-                </p>
-            </div>
-
-        </div>
-    </div>
-    <!-- Add arrow icon -->
-    <img src="./assets/arrow_icon.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
-</section>
-
-    
+      <!-- Add arrow icon -->
+      <img
+        src="./assets/arrow_icon.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
 
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email_icon.png" alt="Email icon"
-                class="icon contact-icon email-icon">
-                <p><a href="mailto:harshdpatil09@gmail.com">
-                    harshdpatil09@gmail.com
-                </a></p>
-            </div>
-
-            <div class="contact-info-container">
-                <img src="./assets/linkedin_icon.png" alt="Email icon"
-                class="icon contact-icon">
-                <p><a href="https://www.linkedin.com">
-                    LinkedIn
-                </a></p>
-            </div>
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email_icon.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:harshdpatil09@gmail.com">
+              harshdpatil09@gmail.com
+            </a>
+          </p>
         </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin_icon.png"
+            alt="Email icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com"> LinkedIn </a></p>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Project</a></li>
-                    <li><a href="#contact">Contacts</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p style="color: white;">Copyright &#169; 2024 Harsh Patil. All Rights Reserved.</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p style="color: white">
+        Copyright &#169; 2024 Harsh Patil. All Rights Reserved.
+      </p>
     </footer>
 
     <script src="Script.js"></script>
-    
-</body>
+  </body>
 </html>
